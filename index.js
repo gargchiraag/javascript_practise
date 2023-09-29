@@ -16,3 +16,26 @@ for(let i=0;i<10;i++)
     }
     console.log(a);
 }
+
+
+window.onload = function(){ 
+    let button=document.getElementById("increment");
+button.onclick=function(){
+    let num=parseInt(document.getElementById("numb").innerHTML);
+    num=num+1;
+    document.getElementById("numb").innerHTML=num;
+}
+
+let buttonDec=document.getElementById("decrement");
+buttonDec.onclick=function(){
+    let num=parseInt(document.getElementById("numb").innerHTML);
+    num=num-1;
+    document.getElementById("numb").innerHTML=num;
+}
+let buttonDel=document.getElementById("reset");
+buttonDel.onclick=function(){
+    let num=parseInt(document.getElementById("numb").innerHTML);
+    num=0;
+    document.getElementById("numb").innerHTML=num;
+}
+};
